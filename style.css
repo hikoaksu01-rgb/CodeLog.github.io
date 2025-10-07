@@ -1,11 +1,21 @@
 
 /* style.css - modern responsive design */
-:root{
-  --bg:#0f1724; --card:#0b1220; --accent:#22c1c3; --muted:#8b9aa6;
-  --glass: rgba(255,255,255,0.04);
-  --radius:14px;
-  --maxw:1100px;
+:root {
+  /* site genel renk değişkenleri burada kalabilir */
 }
+
+body {
+  background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400% 400%;
+  animation: rgbShift 10s infinite alternate;
+  color: #fff;
+}
+
+@keyframes rgbShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
 *{box-sizing:border-box}
 html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071229 0%, #071a2e 60%);color:#e6eef6}
 .container{max-width:var(--maxw);margin:0 auto;padding:28px}
