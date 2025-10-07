@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeLog — Modern Tek Sayfa</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="CodeLog - modern, responsive ve hafif tek sayfa örneği.">
+</head>
+<body>
+  <header class="container nav">
+    <div class="brand">
+      <img src="img/logo.png" alt="CodeLog logo">
+      <div>
+        <div style="font-weight:800">CodeLog</div>
+        <div style="font-size:12px;color:var(--muted)">Modern · Responsive · Lightweight</div>
+      </div>
+    </div>
+    <nav id="navLinks" class="nav-links">
+      <a href="#features">Özellikler</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#contact">İletişim</a>
+      <a class="cta" href="#contact">Başlayalım</a>
+      <button id="menuBtn" style="display:none">Menu</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="hero-card">
+          <h1>Profesyonel, hızlı ve modern web siteleri oluşturun.</h1>
+          <p class="lead">Bu demo; temiz kod, responsive düzen, basit animasyonlar ve hafif JavaScript ile tasarlandı. GitHub Pages için hazır.</p>
+          <div style="display:flex;gap:10px">
+            <a class="btn" href="#contact">İletişime Geç</a>
+            <a class="cta" href="#features">Özelliklere Göz At</a>
+          </div>
+          <div class="features" id="features" style="margin-top:18px">
+            <div class="feature"><strong>Hızlı</strong><h3>Optimize edilmiş performans</h3></div>
+            <div class="feature"><strong>Responsive</strong><h3>Tüm cihazlarda uyumlu</h3></div>
+            <div class="feature"><strong>Kolay</strong><h3>Github Pages ile dağıtım</h3></div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="hero-card">
+          <h3>Hızlı Başlangıç</h3>
+          <p class="lead">Aşağıdaki adımlarla sitenizi GitHub Pages'te çalıştırabilirsiniz.</p>
+          <ol>
+            <li>Bu dosyaları repo'ya koyun.</li>
+            <li>Repo ayarlarından GitHub Pages etkinleştirin.</li>
+            <li>site hazır—her push'ta otomatik güncellenir.</li>
+          </ol>
+          <div style="margin-top:12px;font-size:13px;color:var(--muted)">Demo içerik statik; gerçek backend isterseniz formu bir servisle bağlayın (Netlify, Formspree vb.).</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <img src="img/logo.png" alt="demo1">
+      <img src="img/logo.png" alt="demo2">
+      <img src="img/logo.png" alt="demo3">
+    </section>
+
+    <section id="contact" class="footer">
+      <div class="container" style="padding:0">
+        <h2>İletişim</h2>
+        <form id="contactForm" style="max-width:720px">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <input class="input" name="name" placeholder="İsim">
+            <input class="input" name="email" placeholder="E-posta">
+          </div>
+          <div style="margin-top:12px">
+            <textarea name="message" class="input" placeholder="Mesajınız" rows="5"></textarea>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+            <button class="btn" type="submit">Gönder</button>
+            <div id="formMsg" style="opacity:0;transition:opacity .3s;color:var(--muted)"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
